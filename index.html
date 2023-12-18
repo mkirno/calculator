@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>калькулятор</h1>
+    <div class="calculator">
+        <label for="num1">number1</label> 
+        <input type="number" id="num1">
+
+        <label for="num2">number2</label>
+        <input type="number" id="num2">
+
+        <p>here all the magic happening</p>
+
+        <label for="operation">Операция:</label>
+        <select id="operation">
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+            <option value="divide">Деление</option>
+        </select>
+        <button onclick="calculate()">calculate</button>
+    </div>
+    <div class="result">
+        <p>Result:<span id="result"></span></p>
+    </div>
+    <script src="script.js "></script>
+</body>
+</html>
